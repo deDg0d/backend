@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <link rel=stylesheet href= '/assets/styles.css' type='text/css'>
+ 
+    <head>
+        <style>
+        
+        </style>
+    </head>
+    <h1>contact us!</h1>
+    <p>contact us with the links down bellow</p>
+    <p><%= qs.person %></p>
+    <form id='contact-form' method='POST' action='/contact'>
+        <label for="who">who to contact:</label><br>
+        <input type="text" id="fname" name="who" value=<%=qs.person %>><br>
+        <label for="department">wich department:</label><br>
+        <input type="text" id="fname" name="department" value = <%=qs.dept %>><br>
+        <label for="email">your email:</label><br>
+        <input type="text" id="lname" name="email" ><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+</html>
